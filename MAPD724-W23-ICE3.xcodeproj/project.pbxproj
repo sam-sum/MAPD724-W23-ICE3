@@ -40,6 +40,7 @@
 		060EB0DC29889010000859D7 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060EB0D829889010000859D7 /* Island.swift */; };
 		060EB0DD29889010000859D7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060EB0D929889010000859D7 /* Player.swift */; };
 		060EB0DE29889010000859D7 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060EB0DA29889010000859D7 /* Ocean.swift */; };
+		060EB0E129889BCA000859D7 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060EB0E029889BCA000859D7 /* CollisionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		060EB0D829889010000859D7 /* Island.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		060EB0D929889010000859D7 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		060EB0DA29889010000859D7 /* Ocean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		060EB0E029889BCA000859D7 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		060EB08D29888F67000859D7 /* MAPD724-W23-ICE3 */ = {
 			isa = PBXGroup;
 			children = (
+				060EB0DF29889BA8000859D7 /* Managers */,
 				060EB0A529888FAB000859D7 /* Assets */,
 				060EB0CF29888FCF000859D7 /* Core */,
 				060EB0D629888FF2000859D7 /* GameObjects */,
@@ -192,6 +195,14 @@
 				060EB0D929889010000859D7 /* Player.swift */,
 			);
 			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		060EB0DF29889BA8000859D7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				060EB0E029889BCA000859D7 /* CollisionManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +299,7 @@
 				060EB09529888F67000859D7 /* GameScene.swift in Sources */,
 				060EB0D329888FE3000859D7 /* GameProtocol.swift in Sources */,
 				060EB0DE29889010000859D7 /* Ocean.swift in Sources */,
+				060EB0E129889BCA000859D7 /* CollisionManager.swift in Sources */,
 				060EB0DC29889010000859D7 /* Island.swift in Sources */,
 				060EB09729888F67000859D7 /* GameViewController.swift in Sources */,
 				060EB0D529888FE3000859D7 /* Layer.swift in Sources */,
