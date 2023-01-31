@@ -28,19 +28,22 @@ class CollisionManager {
         
         if (SquareDistance(point1: P1, point2: P2) < Radii * Radii) {
             // we have a collision
-            if (!(object2.isColliding ?? false)) {
+            if (!object2.isColliding!) {
                 switch(object2.name) {
                 case "island":
                     scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
-                    print("Collided with Island")
+                    ScoreManager.Score += 100
+                    gameViewController?.updateScoreLabel()
                     break
                 case "cloud":
                     scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
-                    print("Collided with Cloud")
+                    ScoreManager.Lives -= 1
+                    gameViewController?.updateLivesLabel()
                     break
                 default:
                     break
                 }
+                object2.isColliding = true
             }
         }
     }
